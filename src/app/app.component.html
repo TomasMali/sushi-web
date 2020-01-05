@@ -1,9 +1,28 @@
-<nav class="nav nav-pills  navbar navbar-dark bg-primary" id="pills-tab"  role="tablist">
-  <a class="nav-item nav-link active" [routerLink]="['/home']">Home</a>
-  <a class="nav-item nav-link" [routerLink]="['/tavole']">Tavole</a>
-  <a class="nav-item nav-link" [routerLink]="['/menu']">Menu</a>
-  <a class="nav-item nav-link" [routerLink]="['/home']">Disabled</a>
+
+
+
+
+<nav class="nav nav-pills justify-content-center  navbar navbar-dark bg-primary" id="pills-tab"  role="tablist">
+  <div class="border  border-warning mx-2 bg-warning" style="width:100px">
+    <li class="nav-item">
+    <a class="nav-item nav-link active text-center" href="#" [routerLink]="['/home']">Home</a>
+  </li>
+  </div>
+  <div class="border border-warning mx-2  bg-warning" style="width:100px">
+  <a class="nav-item nav-link active text-center" [routerLink]="['/tavole']">Tavole</a>
+</div>
+  <div class="border border-warning border-4  mx-2  bg-warning" style="width:100px ">
+  <a class="nav-item nav-link active text-center" [routerLink]="['/menu']">Menu</a>
+</div>
 </nav>
+
+<br><br>
+
+
+
+
+
+
 
 
 <router-outlet></router-outlet>

@@ -1,1 +1,34 @@
-<p>tavole works!</p>
+
+
+
+
+
+
+<div class="container">
+    <hr> 
+    <h4 class="text-center "> Tutte le tavole presenti </h4>
+    <hr> 
+    <div class="container">
+    <table class="table table-condensed table-light table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nome</th>
+          <th>Creatore</th>
+          <th>Partecipanti</th>
+         
+        </tr>
+      </thead>
+      <tbody class="table-mini" >
+        <h5 class="text-center text-success">{{item_list.name}}</h5 >
+        <tr *ngFor="let item of response.message">
+            <td>{{item.tableName}}</td>
+            <td>{{item.surname}}</td>
+            <td>{{item.partecipanti}}</td>
+        
+        </tr>
+  
+      </tbody>
+    </table>
+  </div>
+  </div>
+
