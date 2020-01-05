@@ -1,0 +1,30 @@
+<p>home works!</p>
+
+
+<div class="container">
+    <hr> 
+    <h4 class="text-center "> Resoconto tavolo: {{response.message[0].table}} </h4>
+    <hr> 
+    <div class="container">
+    <table class="table table-condensed table-light table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nome</th>
+          <th>Ordinate</th>
+          <th>Arrivate</th>
+          <th>Da Arrivare</th>
+        </tr>
+      </thead>
+      <tbody class="table-mini" *ngFor="let item_list of response.message">
+        <h5 class="text-center text-success">{{item_list.name}}</h5 >
+        <tr *ngFor="let item of item_list.menus">
+            <td>{{item.name}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.arrived}}</td>
+            <td>{{item.quantity-item.arrived}}</td>
+        </tr>
+  
+      </tbody>
+    </table>
+  </div>
+  </div>
