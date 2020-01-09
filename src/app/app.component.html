@@ -1,26 +1,26 @@
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand text-center mx-3" href="#" >Sanshi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-
-<nav class="nav nav-pills justify-content-center  navbar navbar-dark bg-primary" id="pills-tab"  role="tablist">
-  <div class="border  border-warning mx-2 bg-warning" style="width:100px">
-    <li class="nav-item">
-    <a class="nav-item nav-link active text-center" href="#" [routerLink]="['/home']">Home</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active mx-2">
+        <button class="btn btn-danger navbar-btn btn-lg btn-block my-2 my-sm-0" type="submit" [routerLink]="['/home']">Home</button>
+      </li>
+      <li class="nav-item mx-2">
+        <button class="btn btn-primary navbar-btn btn-lg btn-block my-2 my-sm-0" type="submit" [routerLink]="['/tavole']">Tavole</button>
+      </li>
+    <li class="nav-item mx-2">
+    <button class="btn btn-success navbar-btn  btn-lg btn-block my-2 my-sm-0" type="submit" [routerLink]="['/menu']">Menu</button>
   </li>
+
+    </ul>
+   
   </div>
-  <div class="border border-warning mx-2  bg-warning" style="width:100px">
-  <a class="nav-item nav-link active text-center" [routerLink]="['/tavole']">Tavole</a>
-</div>
-  <div class="border border-warning border-4  mx-2  bg-warning" style="width:100px ">
-  <a class="nav-item nav-link active text-center" [routerLink]="['/menu']">Menu</a>
-</div>
 </nav>
-
-<br><br>
-
-
-
-
 
 
 
