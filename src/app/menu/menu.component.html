@@ -5,24 +5,23 @@
     <hr> 
     <h4 class="text-center "> Menu di oggi</h4>
     <hr> 
-    <div class="container">
-    <table class="table table-condensed table-light table-hover">
-      <thead class="thead-dark">
-        <tr>
+    <div class="table-responsive-sm">
+    <table class="table table-hover">
+      <thead class="table-dark">
+        <tr class="bg-success">
           <th>Codice</th>
           <th>Nome</th>
           <th>Porzioni</th>
-          <th>Prezzo</th>
-         
+        <!--      <th>Prezzo</th> -->
         </tr>
       </thead>
       <tbody class="table-mini" >
-        <h5 class="text-center text-success">{{item_list.name}}</h5 >
+
         <tr *ngFor="let item of response.message">
             <td>{{item.menuId}}</td>
             <td>{{item.name}}</td>
             <td>{{item.portion}}</td>
-            <td>{{item.price}}</td>
+        <!--    <td>{{item.price}}</td> -->
         </tr>
   
       </tbody>

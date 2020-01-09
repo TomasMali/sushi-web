@@ -3,18 +3,19 @@
 
 <div class="container">
     <hr> 
-    <h4 class="text-center "> Resoconto tavolo: {{response.message[0].table}} </h4>
+    <h6 class="text-center "> Resoconto tavolo: {{response.message[0].table}} </h6>
     <hr> 
-    <div class="container">
-    <table class="table table-condensed table-light table-hover">
-      <thead class="thead-dark">
-        <tr>
+    <div class="table-responsive-sm">
+    <table class="table  table-hover">
+      <thead class=" table-dark">
+        <tr class="bg-danger">
           <th>Nome</th>
           <th>Ordinati</th>
           <th>Arrivati</th>
-          <th>Da Arrivare</th>
+          <th>Arrivare</th>
         </tr>
       </thead>
+
       <tbody class="table-mini" *ngFor="let item_list of response.message">
         <h5 class="text-center text-success">{{item_list.name}}</h5 >
         <tr *ngFor="let item of item_list.menus">
